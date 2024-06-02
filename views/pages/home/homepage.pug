@@ -1,0 +1,87 @@
+include ../../includes/head
+<body>
+<header class="bg-gray-800 text-white py-4 ">
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold">RC PORTFOLIO </h1>
+    </div>
+</header>
+
+<div class="relative">
+    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400">
+
+        <!-- imagen de perfil -->
+        <div class="max-w-xs mx-auto">
+            <img src="pictures/rcid.jpeg" alt="Imagen" class="rounded-full h-[200px] w-[200px] object-cover">
+        </div>
+
+        <!-- description inicial-->
+
+        <a class="mb-7">
+           <h2 class="text-4xl fas fa-heart text-black-500 mt-4 ">Bienvenido Mi nombre es Raul Cid </h2>
+           <h3 class="text-center"> Javascript Developer & Construction Technologist </h3>
+        </a>
+
+        <!--experiencia -->
+        <h3 class="text-[18px]">Eight years of experience in the area of technical inspection of 🏗️ {buildings} 🏗️ </h3>
+        <h3>My current interest a few years ago 👨‍💻 is in the area of web development and mobile </h3>
+
+        <h5>¿Donde estudie? <a href="https://programadoreschile.org/">Visitar Programadores Chile 🇨🇱 </a></h5>
+        <h5> Programming Student at University Mayor Chile </h5>
+
+
+        // button Cv.
+
+        <div class="flex space-x-4 mt-4">
+            <a href="pictures/cv.pdf" download="raul_cid.pdf" class="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                </svg>
+                <span class="text-center">Download CV</span>
+            </a>
+
+            // button email.
+
+            <button class="w-45 bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><<path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+                </svg>
+                <span class="ml-2">Send Email</span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- Section 2 -->
+
+    <!-- Section 2 -->
+    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-white text-black">
+
+    <!-- fondo -->
+        <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+            <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <!-- logo -->
+                <img class="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="">
+
+                <figure class="mt-10">
+
+                    <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                        <p>Certificaciones Credly</p>
+                    </blockquote>
+
+                    <figcaption class="mt-10 grid grid-cols-4 gap-4">
+                        <img class="mx-auto h-25 w-25 rounded-full" src="./pictures/javascript.png" alt="">
+                        <img class="mx-auto h-25 w-25 rounded-full" src="./pictures/node.png" alt="">
+                        <img class="mx-auto h-25 w-25 rounded-full" src="./pictures/mongo.png" alt="">
+                        <img class="mx-auto h-25 w-25" src="./pictures/Cisco.png" alt="">
+                    </figcaption>
+
+                    <div class="text-center mt-10">
+                        <a href="https://www.credly.com/users/raul-cid.857f82cd/badges" class=" mb-7 bg-blue-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Tablero Credly</a>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        include ../../includes/footer

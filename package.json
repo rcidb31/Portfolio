@@ -5,7 +5,9 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "dev":"npx tailwind -c ./tailwind.config.js -i assets/css/tailwind.css -o assets/css/app.css --watch"
+    "dev": "nodemon --env-file .env main.js -e pug,js,css,html,png,scss",
+    "ui": "browser-sync start --proxy 'http://localhost:4000' --port 4001 --files 'views/**/*.pug, public/**/*.css, controllers/**/*.js' --ignore=node_modules --no-ui --no-notify",
+    "css": "npx tailwindcss -c ./tailwind.config.js -i assets/css/tailwind.css -o assets/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +15,14 @@
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "body": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "parser": "^0.1.4",
+    "pug": "^3.0.2"
   }
 }

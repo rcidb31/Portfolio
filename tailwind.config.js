@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: ['./views/**/*.{html,js}'],
+
+  content: ['./views/**/*.{pug,js,html}'],
+
   theme: {
     extend: {},
   },
-  plugins: [],
-}
 
+  plugins: [
+    "tailwindcss ,autoprefixer",
+    "tailwindcss ,forms"
+  ],
+
+}
